@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="d6dce84b-967e-4c55-9189-6de81a56cc73" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="updateusersdetails" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="d6dce84b-967e-4c55-9189-6de81a56cc73fileName">updateusersdetails</con:setting></con:settings><con:savedRecentRuns>1</con:savedRecentRuns><con:testStep type="restrequest" name="updateuserdetails" id="5eac6e30-d1f3-4bea-9d43-d0654c308302"><con:settings/><con:config service="http://digisurveyapi.clidiem.com" resourcePath="/api/User/updateuserdetails" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="updateuserdetails" id="27c6dfef-9d1d-44d7-8171-93c5e7f77786" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="${#Project#access_token}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>http://digisurveyapi.clidiem.com</con:endpoint><con:request>{
+	UserId: "SdMtjW1%20FjQEKZxk8Jlpww==",
+     UserName: "Rianna",
+     EmailId: "issai.jo5@gmail.com",
+     ContactNumber: "7700000000",
+     DesignationId: "9",
+     RoleId: "${#Project#RoleId}",
+     Notes: "",
+     EmployeeId: "${#Project#EmployeeId}",
+     Street1: "4700",
+    Street2: "northplaceway se",
+    City: "Smyrna",
+     CountryName: "UnitedStates",
+StateName: "GA",
+Zipcode: "30080",
+ModifiedBy: "${#Project#Encrypted ModifiedBy}",
+CompanyId:"${#Project#EncryptedCompanyId}"
+}
+</con:request><con:originalUri>http://digisurveyapi.clidiem.com/api/User/updateuserdetails</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="aba20e1d-5bab-42d7-92a2-f9bdf6901c33" name="Valid HTTP Status Codes"><con:settings/><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="Simple Contains" id="0a2f8b67-0e19-4f22-bd8e-a00fbbf812a3" name="Contains"><con:configuration><token>StatusId</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase>

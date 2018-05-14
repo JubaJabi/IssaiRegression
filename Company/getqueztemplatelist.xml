@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="231a9356-93cd-4d0a-8891-7f0d304b64ff" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="getqueztemplatelist" searchProperties="true" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="231a9356-93cd-4d0a-8891-7f0d304b64fffileName">getqueztemplatelist</con:setting></con:settings><con:savedRecentRuns>1</con:savedRecentRuns><con:testStep type="restrequest" name="getqueztemplatelist" id="4f3e19e5-98af-4e54-a4f7-6fde449a7b94"><con:settings/><con:config service="http://digisurveyapi.clidiem.com" resourcePath="/api/Company/getqueztemplatelist" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="getqueztemplatelist" id="f6291bd5-befd-48a0-a9be-506c2cfa4469" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="${#Project#access_token}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>http://digisurveyapi.clidiem.com</con:endpoint><con:request>{
+	
+	CompanyId: "${#Project#EncryptedCompanyId}",
+     FilterId: "-1",
+     UserLoginId: "${#Project#EncryptedLoginID}"
+}
+
+
+</con:request><con:originalUri>http://digisurveyapi.clidiem.com/api/Company/getqueztemplatelist</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="e81145bf-f3d4-4c77-b24f-f32594297972" name="Valid HTTP Status Codes"><con:settings/><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase>

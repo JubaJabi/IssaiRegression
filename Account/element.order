@@ -1,0 +1,5 @@
+saveapikeysession.xml
+getwalletrecenttransactions.xml
+submitpaymentbywepay.xml
+checkfbaccountandpublicprofileexistsornot.xml
+getuserpaymentdetailstopay.xml

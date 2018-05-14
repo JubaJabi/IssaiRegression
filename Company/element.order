@@ -1,0 +1,13 @@
+getapiaccessdetails.xml
+getcompanycontactdetails.xml
+getqueztemplatelist.xml
+deleteapiaccessdetails.xml
+getapidetails.xml
+getsurverystatusinfocomapnydash.xml
+getallquestionbyquestiongroup.xml
+getselectedquestionsbyselectedids.xml
+getcompanybankdetails.xml
+getcompanyprofiledetails.xml
+getcompanypublicprofiledetails.xml
+updatecompanypublicprofiledetails.xml
+getcompanyprofiledetailsforadmin.xml

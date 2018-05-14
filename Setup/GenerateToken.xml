@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="f70f6194-6da6-4d65-aeb9-0618eb97f162" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="GenerateToken" searchProperties="true" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="f70f6194-6da6-4d65-aeb9-0618eb97f162fileName">GenerateToken</con:setting></con:settings><con:savedRecentRuns>1</con:savedRecentRuns><con:testStep type="restrequest" name="GenerateToken" id="1f76a60c-e7c5-47d8-90ec-9078644dc72a"><con:settings/><con:config service="http://digisurveyapi.clidiem.com" resourcePath="/token" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="GenerateToken" id="9629cf42-1e95-4f33-8ad0-cb96fbc3b03b" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://digisurveyapi.clidiem.com</con:endpoint><con:request>username=siva@clidiem.com&amp;
+password=Test@123&amp;
+grant_type=password&amp;
+usertype=applicationuser&amp;
+isfbuser=false</con:request><con:originalUri>http://digisurveyapi.clidiem.com/token</con:originalUri><con:assertion type="GroovyScriptAssertion" id="4975f2b1-9c07-43e9-8bbd-47a8bed4ff83" name="Script Assertion"><con:configuration><scriptText>import org.apache.commons.lang.RandomStringUtils
+import com.eviware.soapui.support.types.StringToStringMap
+
+import groovy.json.JsonSlurper;
+import java.util.Date;
+
+
+def tc = context.testCase.testSuite.project.testSuites['Setup'].testCases['GenerateToken']
+
+def response = tc.getTestStepByName("GenerateToken").getProperty("Response").getValue()
+
+def slurper = new JsonSlurper();
+def jsonResponse = slurper.parseText response;
+
+Tokenvalue = jsonResponse.access_token
+Token= 'Bearer' + ' ' + Tokenvalue
+log.info Token
+
+if (Token==null){
+	testRunner.fail("FAIL . Did not find access token")
+}
+else
+{
+	context.testCase.testSuite.project.setPropertyValue("access_token",Token)
+}
+
+CompanyID = jsonResponse.CompanyId
+
+log.info CompanyID
+
+if (CompanyID==null){
+	testRunner.fail("FAIL . Did not find CompanyID")
+}
+else
+{
+	context.testCase.testSuite.project.setPropertyValue("CompanyID",CompanyID)
+}
+
+
+// GEtting Company Encrypted ID
+
+
+
+EncryptedCompanyId = jsonResponse.EncryptedCompanyId
+
+log.info EncryptedCompanyId
+
+if (EncryptedCompanyId==null){
+	testRunner.fail("FAIL . Did not find EncryptedCompanyId")
+}
+else
+{
+	context.testCase.testSuite.project.setPropertyValue("EncryptedCompanyId",EncryptedCompanyId)
+}
+
+
+// GEtting Role ID
+
+
+
+
+RoleId = jsonResponse.RoleId
+
+log.info RoleId
+
+if (RoleId==null){
+	testRunner.fail("FAIL . Did not find RoleId")
+}
+else
+{
+	context.testCase.testSuite.project.setPropertyValue("RoleId",RoleId)
+}
+
+
+//Getting EncryptedLoginID
+
+
+
+
+
+EncryptedLoginID= jsonResponse.EncryptedLoginID
+
+log.info EncryptedLoginID
+
+if (EncryptedLoginID==null){
+	testRunner.fail("FAIL . Did not find EncryptedLoginID")
+}
+else
+{
+	context.testCase.testSuite.project.setPropertyValue("EncryptedLoginID",EncryptedLoginID)
+}
+
+/*
+//get the response data from a test step
+ responseJson = testRunner.testCase.getTestStepByName("getPetByIdRequest").getPropertyValue("response")
+ parsedResponse = slurper.parseText(responseJson) 
+//log the value
+ log.info(parsedResponse.name)*/</scriptText></con:configuration></con:assertion><con:assertion type="Valid HTTP Status Codes" id="433f6fd3-956f-4db8-8e49-62580dcfb99a" name="Valid HTTP Status Codes"><con:settings/><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/><con:reportParameters/><con:securityTest id="52ead73a-8fec-4191-b4c2-11422b56adca" testCaseId="f70f6194-6da6-4d65-aeb9-0618eb97f162" name="SecurityTest 1" failSecurityTestOnScanErrors="true"><con:settings><con:setting id="52ead73a-8fec-4191-b4c2-11422b56adcafileName">SecurityTest-1</con:setting></con:settings><con:properties/><con:reportParameters/></con:securityTest></con:testCase>

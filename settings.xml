@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="e2123fd5-baac-4c02-b5e1-688ccbec30db" created="2.3.0" activeEnvironment="Default environment" name="CryptoSurveyIssai" resourceRoot="${projectDir}" updated="2.3.0 2018-03-06T16:28:42Z" encryptionMode="Not encrypted" abortOnError="false" runType="SEQUENTIAL" soapui-version="5.4.0" compositeProjectFormat="1.3" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.actions.iface.tools.soapui.TestRunnerAction@values-local"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="Report Format(s)" value=""/>
+  <con:entry key="Host:Port" value=""/>
+  <con:entry key="Export JUnit Results" value="false"/>
+  <con:entry key="Export All" value="false"/>
+  <con:entry key="Save After" value="false"/>
+  <con:entry key="Add Settings" value="false"/>
+  <con:entry key="WSS Password Type" value=""/>
+  <con:entry key="TestSuite" value="Company"/>
+  <con:entry key="Endpoint" value=""/>
+  <con:entry key="Select Report Type" value=""/>
+  <con:entry key="System Properties" value=""/>
+  <con:entry key="Password" value=""/>
+  <con:entry key="Print Report" value="false"/>
+  <con:entry key="Open Report" value="false"/>
+  <con:entry key="Export JUnit Results with test properties" value="false"/>
+  <con:entry key="Global Properties" value=""/>
+  <con:entry key="Project Properties" value=""/>
+  <con:entry key="Project Password" value=""/>
+  <con:entry key="TestCase" value="&lt;all>"/>
+  <con:entry key="Username" value=""/>
+  <con:entry key="user-settings.xml Password" value=""/>
+  <con:entry key="TestRunner Path" value=""/>
+  <con:entry key="Environment" value="Default"/>
+  <con:entry key="Coverage Report" value="false"/>
+  <con:entry key="Enable UI" value="false"/>
+  <con:entry key="Root Folder" value=""/>
+  <con:entry key="Ignore Errors" value="false"/>
+  <con:entry key="Domain" value=""/>
+  <con:entry key="Tool Args" value=""/>
+  <con:entry key="Save Project" value="false"/>
+</xml-fragment>]]></con:setting><con:setting id="e2123fd5-baac-4c02-b5e1-688ccbec30dbfileName">CryptoSurveyAPI-Issai-soapui-project_April_29_2018</con:setting></con:settings><con:savedRecentRuns>1</con:savedRecentRuns><con:requirements/><con:properties><con:property><con:name>CompanyID</con:name><con:value>10</con:value></con:property><con:property><con:name>EncryptedCompanyId</con:name><con:value>Fa4SDTmM//9wP2D/fO/0kQ==</con:value></con:property><con:property><con:name>RoleId</con:name><con:value>37</con:value></con:property><con:property><con:name>EncryptedLoginID</con:name><con:value>sz0pbAl8vxkVQpkis6/Q1g==</con:value></con:property><con:property><con:name>access_token</con:name><con:value>Bearer eRJqVWvIJVvMTJVatdRvApYZM4v48FS8Gp_v8gMXVqxbZUymaWuhmup6MjRlVfP6nlGrtkzTjgJd5BuQKQjXLzORs1LF5AcEKF6oxTwcnuIrZMc9tSZFzhu9IhPnfOKHTpuc-j0RVDIoI20HHKvppRhbqZLBr8cBaXy7Hxr1NTZXZ4ViO8-EDaGPGpjsp0muGIWqD5LtJn9Ilvj2p1jrtHzbtbkMkoyQUuG9KWtvZTLOFWG0DVwVBy7KAkEUMC1h_0esb2ZXh7Kxn4GKYdo_tzhYv44R_Ey_PID4D9xLwms2jH9OGW_tkhBcIj4NbpUE3Tlhn5UyYJzffvCztFKQoJeHGxZ5zLBC4xcTpdCjv-sXojKEOEQl0QwDGIii4U2Cy9SmzrcoPqUc9ICmmm1QLeYfvk4JtQvZfIKAoYRDUVipIwOL3hOrsZGeBdxcQWZUEBZ948XjSEZ4QKRoQFfrRCjrHE05YKMw_VcCfEs29DCcxPMPImDQFPRWq7mA0clO3HMd8WpCEOJO_iV9V5UHNZe3grtxXds2YZZUH39pbAOh7yeiFee2frDElv5sx80SLjXJxOdv74FM0JTUW6lvJWEV8GDkvV2DR1Bfc5NdbObdDBakMGYf2HG9qONfZy64ooqGAoQZfGbG2d1HxX8klERDP6-H9z4btLdDocjE5XcuxNzR-0q0Z13fqZXJN3mXCxp7yJPj_Kt-sqSPupInMEEOfuy9krcI4p8JmhvSrZy7NslXcvHZhEzaABhRlLlK</con:value></con:property><con:property><con:name>EmployeeId</con:name><con:value>T5qYELDSxb4QFbawhb7Bkg==</con:value></con:property><con:property><con:name>Encrypted EmployeeId</con:name><con:value>T5qYELDSxb4QFbawhb7Bkg==</con:value></con:property><con:property><con:name>ActiveStatus</con:name><con:value>1</con:value></con:property><con:property><con:name>EncryptedPetitionforId</con:name><con:value>1</con:value></con:property><con:property><con:name>Encrypted SurveyCategoriesId</con:name><con:value>gdK3%20w7uBYbophBvd8B6nQ==</con:value></con:property><con:property><con:name>Encrypted ModifiedBy</con:name><con:value>T5qYELDSxb4QFbawhb7Bkg==</con:value></con:property><con:property><con:name>Encrypted CreatedBy</con:name><con:value>T5qYELDSxb4QFbawhb7Bkg==</con:value></con:property><con:property><con:name>Encrypted APIkeyId</con:name><con:value>%20nkCkMFTXS24JTSeCSQijA==</con:value></con:property></con:properties><con:wssContainer/><con:databaseConnectionContainer/><con:jmsConnectionContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:authRepository/><con:tags/><con:sensitiveInformation/></con:soapui-project>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="Survey" path="/api/Survey" id="f86bc44b-ad6a-479d-b778-cb3fe2ea9e0c" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="f86bc44b-ad6a-479d-b778-cb3fe2ea9e0cfileName">Survey</con:setting></con:settings><con:parameters/><con:resource name="saveuserdetails" path="saveuserdetails" id="4519f995-74fc-42ff-b527-ebec2b93ac42"><con:settings/><con:parameters/><con:method name="Method 1" id="8a05c9e3-fc38-4647-9dbc-9a29e7ec74a4" method="POST"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:sav="http://digisurveyapi.clidiem.com/api/Survey/saveuserdetails">sav:Response</con:element></con:representation><con:request name="Request 1" id="a2305ea5-d5af-490b-a9ce-c7db0dd4d2fb" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="${#Project#access_token}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>http://digisurveyapi.clidiem.com</con:endpoint><con:request>{
+	FirstName:"${#Project#access_token}",
+	LastName:"${#Project#access_token}",
+	EmailId:"${#Project#access_token}",
+	Contact:"${#Project#access_token}"
+}
+</con:request><con:originalUri>http://digisurveyapi.clidiem.com/api/Survey/saveuserdetails</con:originalUri><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters/></con:request></con:method></con:resource><con:method name="Method 1" id="cdd19283-37f8-4229-af5e-b3ab864f2e82" method="POST"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="FAULT"><con:mediaType>text/html</con:mediaType><con:status>404</con:status><con:params/><con:element xmlns:xht="http://www.w3.org/1999/xhtml">xht:html</con:element></con:representation><con:request name="Request 1" id="15727d00-73e0-4754-bb3c-ee473b19946a" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="${#Project#Token}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>http://digisurveyapi.clidiem.com</con:endpoint><con:request>{
+     UserName:"George",
+     EmailId:"georgesaugustine@gmail.com",
+     ContactNumber:"4044444444",
+     DesignationId:"5",
+     RoleId:"80",
+     Notes:"", 
+     FilePath:"", 
+     EmployeeId:"53345670",
+     Street1:"", 
+     Street2:"",
+     City:"", 
+     CountryName:"", 
+     StateName:"", 
+     Zipcode:"", 
+     CreatedBy:"T5qYELDSxb4QFbawhb7Bkg==",
+     CompanyId:"sz0pbAl8vxkVQpkis6/Q1g==",
+     WebProjectId:"1"
+}
+</con:request><con:originalUri>http://digisurveyapi.clidiem.com/api/Survey</con:originalUri><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource>
